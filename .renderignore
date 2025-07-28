@@ -1,0 +1,10 @@
+# Ignore everything except the app directory
+/*
+!/app
+
+# Ignore .git and .venv directories within app
+/app/.git/
+/app/.venv/
+
+# Do not ignore model.pkl inside app
+!/app/model.pkl 

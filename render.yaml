@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: flask-ml-app
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
+    rootDir: app
+    healthCheckPath: /
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.0 
